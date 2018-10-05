@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+body {
+    background-color: #D1E8E2;
+}
+
+img {
+    width: 350px;
+    height: 100px;
+    position: absolute;
+    left: 50px;
+    top: 30px;
+}
+
+header {
+    margin: 16px auto;
+    border: 2px solid darkslategray;
+    border-radius: 30px;
+    box-shadow: 3px 3px 8px black;
+    text-align: center;
+    font-size: 16pt;
+    color: darkcyan;
+    font-family: 'Anton', sans-serif;
+}
+
+.container {
+    margin: auto; 
+    width: 1200px;
+}
+
+nav {
+    float: left; 
+    width: 200px;
+}
+
+.main {
+    border: 2px solid black;
+    box-shadow: 3px 3px 8px black;
+    background-color: rgb(255, 219, 184); 
+    float: left; 
+    padding: 8px;
+    width: 850px;
+    margin-bottom: 16px;
+}
+
+.mainReg {
+    border: 2px solid black;
+    box-shadow: 3px 3px 8px black;
+    background-color: rgb(255, 219, 184); 
+    float: left; 
+    padding: 8px;
+    width: 700px;
+    margin-bottom: 16px;
+}
+
+article h2 , h1 {
+    text-align: center;
+}
+
+nav ul {
+    width: 180px; 
+    list-style-type: none; 
+    border: 2px solid black;
+    box-shadow: 3px 3px 8px black;
+    background-color: rgb(255, 219, 184); 
+    margin: 0; 
+    padding: 0;
+}
+
+nav li a {
+    color: black;
+    display: block;
+    text-decoration: none; 
+    padding: 8px 16px;
+}
+
+nav li a:hover {
+    background-color: #D9B08C
+}
+
+footer {
+    border: 2px solid darkslategray;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px black;
+    color: darkcyan;
+    text-align: center;
+    font-weight: bold;
+    clear: both;
+}
+
+aside {
+    width: 200px;
+    height: 550px;
+    float: left;
+    border: 2px solid black;
+    box-shadow: 3px 3px 8px black;
+    background-color: rgb(255, 219, 184); 
+    margin-left: 16px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#errorMessages {
+    color: red;
+    padding: 4pt;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+input, select {
+    width: 200px;
+    box-sizing: border-box;
+}
+
+#submitResetButtons {
+    text-align: center;
+}

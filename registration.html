@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nozama Registration (Tran)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize1.css" />
+    <script src=js/registration.js></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/Nozama.png" alt="Nozama Logo">
+        <h1>Nozama</h1>
+    </header>
+
+    <div class="container">
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="registration.html">Registration</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="mainReg">
+            <article>
+                <h1>Registration</h1>
+                <form id="registrationForm" name="signup" method="POST" action="https://httpbin.org/post" onsubmit="return validateForm();">
+
+                    <input type="hidden" name="lastName" id="lastName" value="Tran" />
+                    <input type="hidden" name="studentId" id="studentId" value="147485171" />
+
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="fname">First Name:</label>
+                        <input type="text" name="fname" id="fname" tabindex="1" autofocus required/>
+                        <br>
+                        <br>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" id="lname" tabindex="2" required/>
+                        <br>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" tabindex="3" required/>
+                        <br>
+                        <br>
+                        <label for="phone">Telephone:</label>
+                        <input type="tel" name="phone" id="phone" tabindex="4" required placeholder="###-###-####" />
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Shipping Address</legend>
+                        <label for="unitNo">Unit Number:</label>
+                        <input type="text" name="unitNo" id="unitNo" tabindex="5" required/>
+                        <br>
+                        <br>
+                        <label for="streetNo">Street Number:</label>
+                        <input type="text" name="streetNo" id="streetNo" tabindex="6" required/>
+                        <br>
+                        <br>
+                        <label for="streetName">Street Name:</label>
+                        <input type="text" name="streetName" id="streetName" tabindex="7" required/>
+                        <br>
+                        <br>
+                        <label for="city">City:</label>
+                        <input type="text" name="city" id="city" tabindex="8" required/>
+                        <br>
+                        <br>
+                        <label for="province">Province/Territory:</label>
+                        <select name="province" id="province" tabindex="9" required autocomplete="off">
+                            <option value="" disabled> Select a province/territory </option>
+                            <option value="1"> Alberta </option>
+                            <option value="2"> British Columbia </option>
+                            <option value="3"> Manitoba </option>
+                            <option value="4"> New Brunswick </option>
+                            <option value="5"> Newfoundland and Labrador </option>
+                            <option value="6"> Northwest Territories </option>
+                            <option value="7"> Nova Scotia </option>
+                            <option value="8"> Nunavut </option>
+                            <option value="9" selected> Ontario </option>
+                            <option value="10"> Prince Edward Island </option>
+                            <option value="11"> Quebec </option>
+                            <option value="12"> Saskatchewan </option>
+                            <option value="13"> Yukon </option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="postalCode">Postal Code:</label>
+                        <input type="text" name="postalCode" id="postalCode" maxlength="6" tabindex="10" required/>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Account Information</legend>
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username" tabindex="11" required/>
+                        <br>
+                        <br>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" tabindex="12" required/>
+                        <br>
+                        <br>
+                        <label for="confirmPass">Confirm Password:</label>
+                        <input type="password" name="confirmPass" id="confirmPass" tabindex="13" required/>
+                    </fieldset>
+
+                    <p id="submitResetButtons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </p>
+
+                </form>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Errors</h3>
+            <div id="errorMessages"></div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>© Henry Tran</p>
+    </footer>
+</body>
+
+</html>
